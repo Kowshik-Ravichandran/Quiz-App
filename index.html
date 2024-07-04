@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Quiz App</h1>
+        </header>
+        
+        <div id="quiz">
+            <div id="start-button" class="button" onclick="startQuiz()">Start Quiz</div>
+
+            <div id="timer" style="display: none;">
+                Time Left: <span id="time">05:00</span>
+            </div>
+
+            <div id="question-container" style="display: none;"></div>
+
+            <div id="navigation" style="display: none;">
+                <div id="prev-button" class="button" onclick="prevPage()" style="display: none;">Previous</div>
+                <div id="next-button" class="button" onclick="nextPage()">Next</div>
+                <div id="submit-button" class="button" onclick="submitQuiz()" style="display: none;">Submit</div>
+            </div>
+
+            <div id="score-popup" class="popup" style="display: none;">
+                <div class="popup-content">
+                    <span class="close-button" onclick="closePopup()">&times;</span>
+                    <div id="score-message"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="quiz-form">
+            <!-- Your quiz form elements -->
+        </div>
+        
+        <div id="results" style="display: none;">
+            <div id="answers"></div>
+        </div>
+    </div>
+
+    <script src="question.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
