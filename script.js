@@ -194,19 +194,13 @@ function showResults() {
         answersContainer.appendChild(answerDiv);
     });
 
-    const scoreMessage = document.getElementById('score-message');
-    scoreMessage.textContent = `Your Score: ${correctAnswers} out of ${questions.length}`;
-
-    // Show the popup
-    const popup = document.getElementById('score-popup');
-    popup.style.display = 'block';
+    const scoreDisplay = document.createElement('p');
+    scoreDisplay.textContent = `Your Score: ${correctAnswers} out of ${questions.length}`;
+    answersContainer.appendChild(scoreDisplay);
 
     document.getElementById('question-container').style.display = 'none';
     document.getElementById('navigation').style.display = 'none';
     document.getElementById('results').style.display = 'block';
 }
 
-function closePopup() {
-    const popup = document.getElementById('score-popup');
-    popup.style.display = 'none';
-}
+// HTML structure and CSS adjustments should be made accordingly.
