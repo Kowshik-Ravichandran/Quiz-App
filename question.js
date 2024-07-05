@@ -16,7 +16,12 @@ const questions = [
         options: ['JavaScript', 'HTML', 'Python', 'CSS'],
         answer: ['JavaScript', 'Python']
     },
-
+    {
+        type: 'dropdown',
+        content: 'Select the smallest continent in the world.',
+        options: ['Australia', 'Antarctica', 'Europe'],
+        answer: 'Australia'
+    },
     {
         type: 'radio',
         content: 'Is water a compound?',
@@ -95,12 +100,6 @@ const questions = [
         content: 'Which is the largest ocean on Earth?',
         options: ['Atlantic', 'Indian', 'Pacific'],
         answer: 'Pacific'
-    },
-    {
-        type: 'dropdown',
-        content: 'Select the smallest continent in the world.',
-        options: ['Australia', 'Antarctica', 'Europe'],
-        answer: 'Australia'
     },
     {
         type: 'checkbox',
